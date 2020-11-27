@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
+const helmet = require('helmet');
 const logger = require('./config/logger');
 
 const indexRouter = require('./routes/index');
@@ -13,6 +14,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+app.use(helmet());
 app.use(morgan('combined', { stream: logger.stream.write }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
