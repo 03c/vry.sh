@@ -2,6 +2,7 @@ const express = require('express');
 const yup = require('yup');
 const monk = require('monk');
 const Hashids = require('hashids');
+require('dotenv').config();
 
 const router = express.Router();
 
