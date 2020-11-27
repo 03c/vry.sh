@@ -13,7 +13,7 @@ const createUrlSchema = yup.object().shape({
   url: yup.string().trim().url().required(),
 });
 
-router.post('/api/url', async (req, res, next) => {
+router.post('/url', async (req, res, next) => {
   const { url } = req.body;
   try {
     await createUrlSchema.validate({
