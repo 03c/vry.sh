@@ -1,6 +1,6 @@
 const express = require('express');
-const { URL } = require('../database');
-const hashids = require('../utils/hashids');
+const { URL } = require('../config/database');
+const hashids = require('../config/hashids');
 
 const router = express.Router();
 
