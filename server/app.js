@@ -2,7 +2,7 @@ const createError = require('http-errors');
 const express = require('express');
 const morgan = require('morgan');
 const helmet = require('helmet');
-const logger = require('./config/logger');
+const logger = require('../config/logger');
 
 const indexRouter = require('./routes/index');
 const apiRouter = require('./routes/api');
