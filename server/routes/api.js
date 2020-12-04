@@ -1,7 +1,7 @@
 const express = require('express');
 const yup = require('yup');
-const hashids = require('../config/hashids');
-const { URL } = require('../config/database');
+const hashids = require('../../config/hashids');
+const { URL } = require('../../config/database');
 
 const router = express.Router();
 

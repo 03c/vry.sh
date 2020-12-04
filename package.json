@@ -2,8 +2,8 @@
   "name": "very-short",
   "version": "0.0.0",
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "start": "node ./server/bin/www",
+    "dev": "nodemon ./server/bin/www"
   },
   "dependencies": {
     "debug": "~2.6.9",
